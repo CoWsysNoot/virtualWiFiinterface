@@ -77,7 +77,7 @@ The script relies on the following tools and utilities, which are commonly found
     ```bash
     git clone https://github.com/CoWsysNoot/virtualWiFiinterface.git
     ```
-2.  cd to virtualWiFiinterface folder
+2.  CD to virtualWiFiinterface folder
     ```bash
     cd virtualWiFiinterface
     ```
