@@ -1,5 +1,6 @@
 # This project started with making small bash script to switch WiFi into monitor mode and now with big help of AI i/we made one that do that and making Virtual wifi interface/s when more is needed but you have only one . 
-#  README.md is fuly made by AI 
+#  README.md is  made by AI with some edits by me .
+# Tested on Debian , 6.10.11 .
 **************************************************************************************************************************************
 **************************************************************************************************************************************
 
@@ -10,9 +11,9 @@
 
 This script is a Bash script designed for Linux systems to create virtual Wi-Fi interfaces from a physical Wi-Fi adapter and set the virtual interface into monitor mode.  It also handles the necessary steps to ensure that conflicting processes (like `NetworkManager` and `wpa_supplicant`) do not interfere with the process.
 
-Name of virtual wifi interface are generated like wlan0 to virt_wlan00,virt_wlan01,virt_wlan02 etc (wlan1 to virt_wlan20...) .
-Option "R. Remove all Virtual WiFi interfaces"  do what it says, remove all Virtual devices that are made .
-It runs "airmon-ng check kill" i needed it for my project that this script are used and i had issues when physical device are in managed mode . 
+Name of virtual wifi interface are generated like wlan0 to virt_wlan00 , virt_wlan01 , virt_wlan02 etc.  (wlan1 to virt_wlan10...) .
+Option "R. Remove all Virtual Wi-Fi interfaces"  do what it says, remove all Virtual devices that are made .
+It runs "airmon-ng check kill" i needed it for my project that this script are used and i had issues while physical device are in managed mode . 
 
 ## Features
 
@@ -73,18 +74,19 @@ The script relies on the following tools and utilities, which are commonly found
     git clone https://github.com/CoWsysNoot/virtualWiFiinterface.git
     cd virtualWiFiinterface
     ```
-
-2.  Make the script executable:
+    ## Or download .zip and extract it 
+    
+3.  Make the script executable:
     ```bash
-    chmod +x create_virtual_wifi.sh
+    chmod +x virtualWiFiinterface.sh
     ```
 
-3.  Run the script as root:
+4.  Run the script as root:
     ```bash
-    sudo ./create_virtual_wifi.sh
+    sudo ./virtualWiFiinterface.sh
     ```
 
-4.  Follow the on-screen instructions to select a Wi-Fi interface or remove existing virtual interfaces.
+5.  Follow the on-screen instructions to select a Wi-Fi interface or remove existing virtual interfaces.
 
 ## Script Operation
 
@@ -98,7 +100,5 @@ The script relies on the following tools and utilities, which are commonly found
 8.  It sets the virtual interface to monitor mode using `ip link` and `iw`.
 9.  It displays the name of the created virtual interface.
 
-## Contributing
 
-Contributions are welcome!  If you have ideas for improvements, bug fixes, or want to add a GUI, please submit a pull request or open an issue on GitHub.
 
