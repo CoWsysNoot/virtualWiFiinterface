@@ -13,7 +13,7 @@ This script is a Bash script designed for Linux systems to create virtual Wi-Fi 
 Name of virtual wifi interface are generated like wlan0 to virt_wlan00 , virt_wlan01 , virt_wlan02 etc.  (wlan1 to virt_wlan10...) .
 Option "R. Remove all Virtual Wi-Fi interfaces"  do what it says, remove all Virtual devices that are made .
 It runs "airmon-ng check kill" i needed it for my project that this script are used and i had issues while physical device are in managed mode . 
-see [PICTURES](https://github.com/CoWsysNoot/virtualWiFiinterface/edit/main/README.md#pictures)
+see [PICTURES](https://github.com/CoWsysNoot/virtualWiFiinterface/main/README.md#pictures)
 
 ## Features
 
