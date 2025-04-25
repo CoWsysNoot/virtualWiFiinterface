@@ -16,7 +16,7 @@ Name of virtual wifi interface are generated like wlan0 to virt_wlan00 , virt_wl
 Option "R. Remove all Virtual Wi-Fi interfaces"  do what it says, remove all Virtual devices that are made .
 It runs "airmon-ng check kill" i needed it for my project that this script are used and i had issues while physical device are in managed mode . 
 
-### Scroll down to see pistures of bash scrip running. 
+### Scroll down to see pictures of bash scrip running. 
 **************************************************************************************************************************************
 
 
