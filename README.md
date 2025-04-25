@@ -2,7 +2,6 @@
 #  README.md is  made by AI with some edits by me .
 # Tested on Debian , 6.10.11 .
 **************************************************************************************************************************************
-**************************************************************************************************************************************
 
 
 # Virtual WiFi Interface Creator and Monitor Mode Enabler
@@ -14,14 +13,16 @@ This script is a Bash script designed for Linux systems to create virtual Wi-Fi 
 Name of virtual wifi interface are generated like wlan0 to virt_wlan00 , virt_wlan01 , virt_wlan02 etc.  (wlan1 to virt_wlan10...) .
 Option "R. Remove all Virtual Wi-Fi interfaces"  do what it says, remove all Virtual devices that are made .
 It runs "airmon-ng check kill" i needed it for my project that this script are used and i had issues while physical device are in managed mode . 
+see [PICTURES](https://github.com/CoWsysNoot/virtualWiFiinterface/edit/main/README.md#pictures)
 
 ## Features
 
+* Requires root privileges to run.
 * Creates a virtual Wi-Fi interface on top of an existing physical Wi-Fi interface.
 * Sets the created virtual interface to monitor mode.
 * Checks for conflicting processes (`NetworkManager`, `wpa_supplicant`) and terminates them using `airmon-ng`.
 * Provides an option to remove all existing virtual Wi-Fi interfaces.
-* Requires root privileges to run.
+
 
 ## Dependencies
 
@@ -72,20 +73,22 @@ The script relies on the following tools and utilities, which are commonly found
 1.  Clone the repository:
     ```bash
     git clone https://github.com/CoWsysNoot/virtualWiFiinterface.git
+    ```
+2. cd to virtualWiFiinterface folder
+    ```bash
     cd virtualWiFiinterface
     ```
-    
-3.  Make the script executable:
+4.  Make the script executable:
     ```bash
     chmod +x virtualWiFiinterface.sh
     ```
 
-4.  Run the script as root:
+5.  Run the script as root:
     ```bash
     sudo ./virtualWiFiinterface.sh
     ```
 
-5.  Follow the on-screen instructions to select a Wi-Fi interface or remove existing virtual interfaces.
+6.  Follow the on-screen instructions to select a Wi-Fi interface or remove existing virtual interfaces.
 
 ## Script Operation
 
@@ -99,5 +102,15 @@ The script relies on the following tools and utilities, which are commonly found
 8.  It sets the virtual interface to monitor mode using `ip link` and `iw`.
 9.  It displays the name of the created virtual interface.
 
+**************************************************************************************************************************************
+# Pictures
 
 
+## bash script running:
+![Alt Text](https://iili.io/3VC2EMP.png)
+
+##  wirtual interfaces active:
+![Alt Text](https://iili.io/3VCB8il.png)
+
+##  "iwconfig" results:
+![Alt Text](https://iili.io/3VCKznp.png)
