@@ -3,6 +3,8 @@
 # Tested on Debian , 6.10.11 .
 **************************************************************************************************************************************
 
+#
+
 
 # Virtual WiFi Interface Creator and Monitor Mode Enabler
 
@@ -19,7 +21,7 @@ It runs "airmon-ng check kill" i needed it for my project that this script are u
 
 
 ## Features
-
+* Requires WiFi adapter that support virtual interface 
 * Requires root privileges to run.
 * Creates a virtual Wi-Fi interface on top of an existing physical Wi-Fi interface.
 * Sets the created virtual interface to monitor mode.
