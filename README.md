@@ -74,7 +74,6 @@ The script relies on the following tools and utilities, which are commonly found
     git clone https://github.com/CoWsysNoot/virtualWiFiinterface.git
     cd virtualWiFiinterface
     ```
-    ## Or download .zip and extract it 
     
 3.  Make the script executable:
     ```bash
