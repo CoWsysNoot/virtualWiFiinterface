@@ -10,13 +10,13 @@
 
 ## Description
 
-This script is a Bash script designed for Linux systems to create virtual Wi-Fi interfaces from a physical Wi-Fi adapter and set the virtual interface into monitor mode.  It also handles the necessary steps to ensure that conflicting processes (like `NetworkManager` and `wpa_supplicant`) do not interfere with the process.
+This is a Bash script designed for Linux systems to create virtual Wi-Fi interfaces from a physical Wi-Fi adapter and set the virtual interface into monitor mode.  It also handles the necessary steps to ensure that conflicting processes (like `NetworkManager` and `wpa_supplicant`) do not interfere with the process.
 
 Name of virtual wifi interface are generated like wlan0 to virt_wlan00 , virt_wlan01 , virt_wlan02 etc.  (wlan1 to virt_wlan10...) .
 Option "R. Remove all Virtual Wi-Fi interfaces"  do what it says, remove all Virtual devices that are made .
 It runs "airmon-ng check kill" i needed it for my project that this script are used and i had issues while physical device are in managed mode . 
 
-### Scroll down to see pictures of bash scrip running. 
+### Scroll down to see pictures of bash script running. 
 **************************************************************************************************************************************
 
 
