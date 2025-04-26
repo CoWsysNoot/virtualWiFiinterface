@@ -1,6 +1,6 @@
 ### This project started with making small bash script to switch WiFi into monitor mode and now with big help of AI i/we made one that do that and making Virtual wifi interface/s when more is needed but you have only one . 
 ###  README.md is  made by AI with some edits by me .
-##Tested on Debian , 6.10.11 .
+* Tested on Debian , 6.10.11 .
 **************************************************************************************************************************************
 
 #
