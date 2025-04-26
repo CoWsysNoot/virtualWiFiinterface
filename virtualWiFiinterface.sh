@@ -130,7 +130,7 @@ remove_all_virtual_interfaces() {
   if [ ${#virtual_interfaces[@]} -gt 0 ]; then
     echo -e "${ORANGE}Removing the following virtual interfaces:${RESET}"
     for vif in "${virtual_interfaces[@]}"; do
-      echo "  - ${CYAN}$vif${RESET}"
+      echo -e "  - ${CYAN}$vif${RESET}"
       ip link set "$vif" down
       iw dev "$vif" del
       if [ $? -ne 0 ]; then
@@ -195,7 +195,7 @@ while true; do #added loop
   echo -e "${RED}X. Exit script${RESET}" # added option X
 
   # Prompt the user to choose an interface
-  read -p "Enter the number of the Wi-Fi interface to use, or 'R' to remove, or 'X' to exit: " selected_interface_num
+  read -p "Enter the number of the physical Wi-Fi adapter , 'R' to remove or 'X' to exit: " selected_interface_num
 
   # Validate the user input
   if [[ "$selected_interface_num" == "R" || "$selected_interface_num" == "r" ]]; then
