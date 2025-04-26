@@ -108,6 +108,29 @@ The script relies on the following tools and utilities, which are commonly found
 9.  It displays the name of the created virtual interface.
 
 **************************************************************************************************************************************
+
+# Edit:
+
+* Removed most of the output Script loop when choice is made (now more virtual wifi interfaces can be made without exiting script)
+* Added colors 
+* Wrong choice does not exit script, loop with message
+* Added option "X" to exit
+* Removed "wlan0" from the list
+* When virtual devices are removed NetworkManager starts but physical devices that ware used are still in monitor mode  
+
+
+# To do:
+
+* Add option to keep or kill NetworkManager
+* maybe more when i get idea or time
+* -
+* -
+* -
+* -
+* Get better in English so i do not get mad faces about spelling and how settnings are made 
+
+**************************************************************************************************************************************
+
 # Pictures
 
 
