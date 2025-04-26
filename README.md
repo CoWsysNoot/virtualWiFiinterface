@@ -111,7 +111,8 @@ The script relies on the following tools and utilities, which are commonly found
 
 # Edit:
 
-* Removed most of the output Script loop when choice is made (now more virtual wifi interfaces can be made without exiting script)
+* Removed most of the output
+* Script loop when choice is made (now more virtual wifi interfaces can be made without exiting script)
 * Added colors 
 * Wrong choice does not exit script, loop with message
 * Added option "X" to exit
@@ -122,6 +123,7 @@ The script relies on the following tools and utilities, which are commonly found
 # To do:
 
 * Add option to keep or kill NetworkManager
+* Add choice to start multiply (1-4) virtual WiFi interfaces from one physical WiFi interface 
 * maybe more when i get idea or time
 * -
 * -
