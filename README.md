@@ -6,7 +6,7 @@
 #
 
 
-# Virtual WiFi Interface Creator and Monitor Mode Enabler
+# Virtual WiFi Interface Creator (VWIC) 
 
 ## Description
 
@@ -123,8 +123,9 @@ The script relies on the following tools and utilities, which are commonly found
 # To do:
 
 * Add option to keep or kill NetworkManager
-* Add choice to start multiply (1-4) virtual WiFi interfaces from one physical WiFi interface 
-* maybe more when i get idea or time
+* Add choice to start multiply (1-4) virtual WiFi interfaces from one physical WiFi interface
+* Change name of script to "vwic"or something else if i get good idea for it 
+* Maybe more when i get idea or time
 * -
 * -
 * -
