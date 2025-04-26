@@ -1,10 +1,3 @@
-* This project started with making small bash script to switch WiFi into monitor mode and now with big help of AI i/we made one that do that and making Virtual wifi interface/s when more is needed but you have only one . 
-*  README.md is  made by AI with some edits by me .
-* Tested on Debian , 6.10.11 .
-**************************************************************************************************************************************
-
-#
-
 
 # Virtual WiFi Interface Creator (VWIC) 
 
@@ -12,7 +5,7 @@
 
 This is a Bash script designed for Linux systems to create virtual Wi-Fi interfaces from a physical Wi-Fi adapter and set the virtual interface into monitor mode.  It also handles the necessary steps to ensure that conflicting processes (like `NetworkManager` and `wpa_supplicant`) do not interfere with the process.
 
-Name of virtual wifi interface are generated like wlan0 to virt_wlan00 , virt_wlan01 , virt_wlan02 etc.  (wlan1 to virt_wlan10...) .
+Name of virtual wifi interface are generated like wlan1 to virt_wlan10 , virt_wlan11 , virt_wlan12 etc.  (wlan2 to virt_wlan20 ...) .
 Option "R. Remove all Virtual Wi-Fi interfaces"  do what it says, remove all Virtual devices that are made .
 It runs "airmon-ng check kill" i needed it for my project that this script are used and i had issues while physical device are in managed mode . 
 
@@ -27,6 +20,7 @@ It runs "airmon-ng check kill" i needed it for my project that this script are u
 * Sets the created virtual interface to monitor mode.
 * Checks for conflicting processes (`NetworkManager`, `wpa_supplicant`) and terminates them using `airmon-ng`.
 * Provides an option to remove all existing virtual Wi-Fi interfaces.
+* Tested on Debian (6.10.11) 
 
 
 ## Dependencies
