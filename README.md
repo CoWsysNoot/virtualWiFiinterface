@@ -3,11 +3,12 @@
 
 ## Description
 
-This is a Bash script designed for Linux systems to create virtual Wi-Fi interfaces from a physical Wi-Fi adapter and set the virtual interface into monitor mode.  It also handles the necessary steps to ensure that conflicting processes (like `NetworkManager` and `wpa_supplicant`) do not interfere with the process.
+This is a Bash script designed for Linux systems to create virtual WiFi interfaces from a physical WiFi adapter and set the virtual interface into monitor mode.  It also handles the necessary steps to ensure that conflicting processes (like `NetworkManager` and `wpa_supplicant`) do not interfere with the process.
 
-Name of virtual wifi interface are generated like wlan1 to virt_wlan10 , virt_wlan11 , virt_wlan12 etc.  (wlan2 to virt_wlan20 ...) .
-Option "R. Remove all Virtual Wi-Fi interfaces"  do what it says, remove all Virtual devices that are made .
-It runs "airmon-ng check kill" i needed it for my project that this script are used and i had issues while physical device are in managed mode . 
+* Name of virtual wifi interface are generated like wlan1 to virt_wlan10 , virt_wlan11 , virt_wlan12 etc.  (wlan2 to virt_wlan20 ...) .
+* Option "R. Remove all Virtual Wi-Fi interfaces"  do what it says, remove all Virtual devices that are made .
+* Option "X" exit script.
+ 
 
 ### Scroll down to see pictures of bash script running. 
 **************************************************************************************************************************************
@@ -16,11 +17,16 @@ It runs "airmon-ng check kill" i needed it for my project that this script are u
 ## Features
 * Requires WiFi adapter that support virtual interface 
 * Requires root privileges to run.
-* Creates a virtual Wi-Fi interface on top of an existing physical Wi-Fi interface.
+* Creates a virtual Wi-Fi interface on top of an existing physical WiFi interface.
 * Sets the created virtual interface to monitor mode.
 * Checks for conflicting processes (`NetworkManager`, `wpa_supplicant`) and terminates them using `airmon-ng`.
 * Provides an option to remove all existing virtual Wi-Fi interfaces.
-* Tested on Debian (6.10.11) 
+* When removing Virtua WiFi device it start NetworkManager 
+* Tested on Debian (6.10.11)
+* Name of virtual wifi interface are generated like wlan1 to virt_wlan10 , virt_wlan11 , virt_wlan12 etc.  (wlan2 to virt_wlan20 ...)
+* Option "R. Remove all Virtual WiFi interfaces"  do what it says, remove all Virtual devices that are made .
+* Option "X" exit script.
+
 
 
 ## Dependencies
@@ -92,9 +98,9 @@ The script relies on the following tools and utilities, which are commonly found
 ## Script Operation
 
 1.  The script checks if it is being run with root privileges. If not, it exits.
-2.  It identifies the available Wi-Fi interfaces using `iwconfig`.
-3.  It displays a list of available Wi-Fi interfaces and prompts the user to select one.
-4.  The script provides an option to remove all existing virtual Wi-Fi interfaces before proceeding.
+2.  It identifies the available WiFi interfaces using `iwconfig`.
+3.  It displays a list of available WiFi interfaces and prompts the user to select one.
+4.  The script provides an option to remove all existing virtual WiFi interfaces before proceeding.
 5.  It uses `airmon-ng` to check for conflicting processes (like `NetworkManager` and `wpa_supplicant`) and terminates them.
 6.  It sets the selected physical Wi-Fi interface to monitor mode using `airmon-ng`.
 7.  It creates a virtual Wi-Fi interface using `iw`.
@@ -118,7 +124,7 @@ The script relies on the following tools and utilities, which are commonly found
 
 * Add option to keep or kill NetworkManager
 * Add choice to start multiply (1-4) virtual WiFi interfaces from one physical WiFi interface
-* Change name of script to "vwic"or something else if i get good idea for it 
+* Change name of script to "VWIC"or something else if i get good idea for it 
 * Maybe more when i get idea or time
 * -
 * -
